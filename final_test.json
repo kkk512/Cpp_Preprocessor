@@ -1,0 +1,975 @@
+{
+  "file_results": {
+    "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h": {
+      "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+      "directives": [
+        {
+          "type": "ifndef",
+          "content": "#ifndef CONFIG_H",
+          "line_number": 1,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "!CONFIG_H",
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "CONFIG_H"
+        },
+        {
+          "type": "define",
+          "content": "#define CONFIG_H",
+          "line_number": 2,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "CONFIG_H"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_MAJOR 1",
+          "line_number": 5,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_MAJOR"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_MINOR 2",
+          "line_number": 6,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_MINOR"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_PATCH 3",
+          "line_number": 7,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_PATCH"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef WINDOWS",
+          "line_number": 10,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "WINDOWS",
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": "WINDOWS"
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Windows\"",
+          "line_number": 11,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"\\\\\"",
+          "line_number": 12,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef DEBUG",
+          "line_number": 13,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "DEBUG",
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "DEBUG"
+          ],
+          "symbol_name": "DEBUG"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 3",
+          "line_number": 14,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "else",
+          "content": "#else",
+          "line_number": 15,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "!DEBUG"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 1",
+          "line_number": 16,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "!DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 17,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "elif",
+          "content": "#elif defined(LINUX)",
+          "line_number": 18,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "defined(LINUX)",
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Linux\"",
+          "line_number": 19,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"/\"",
+          "line_number": 20,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef DEBUG",
+          "line_number": 21,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "DEBUG",
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "DEBUG"
+          ],
+          "symbol_name": "DEBUG"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 3",
+          "line_number": 22,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "else",
+          "content": "#else",
+          "line_number": 23,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "!DEBUG"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 1",
+          "line_number": 24,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "!DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 25,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "else",
+          "content": "#else",
+          "line_number": 26,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Unknown\"",
+          "line_number": 27,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"/\"",
+          "line_number": 28,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 0",
+          "line_number": 29,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 30,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef ENABLE_LOGGING",
+          "line_number": 33,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "ENABLE_LOGGING",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING"
+          ],
+          "symbol_name": "ENABLE_LOGGING"
+        },
+        {
+          "type": "define",
+          "content": "#define USE_FILE_LOGGING",
+          "line_number": 34,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING"
+          ],
+          "symbol_name": "USE_FILE_LOGGING"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef VERBOSE_LOGGING",
+          "line_number": 35,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "VERBOSE_LOGGING",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING",
+            "VERBOSE_LOGGING"
+          ],
+          "symbol_name": "VERBOSE_LOGGING"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_VERBOSE",
+          "line_number": 36,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING",
+            "VERBOSE_LOGGING"
+          ],
+          "symbol_name": "LOG_VERBOSE"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 37,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 38,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef ENABLE_NETWORKING",
+          "line_number": 40,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "ENABLE_NETWORKING",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING"
+          ],
+          "symbol_name": "ENABLE_NETWORKING"
+        },
+        {
+          "type": "define",
+          "content": "#define MAX_CONNECTIONS 100",
+          "line_number": 41,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING"
+          ],
+          "symbol_name": "MAX_CONNECTIONS"
+        },
+        {
+          "type": "ifndef",
+          "content": "#ifndef TIMEOUT_SECONDS",
+          "line_number": 42,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "!TIMEOUT_SECONDS",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING",
+            "!TIMEOUT_SECONDS"
+          ],
+          "symbol_name": "TIMEOUT_SECONDS"
+        },
+        {
+          "type": "define",
+          "content": "#define TIMEOUT_SECONDS 30",
+          "line_number": 43,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING",
+            "!TIMEOUT_SECONDS"
+          ],
+          "symbol_name": "TIMEOUT_SECONDS"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 44,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 45,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "if",
+          "content": "#if defined(DEBUG) && defined(RELEASE)",
+          "line_number": 48,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "defined(DEBUG) && defined(RELEASE)",
+          "context": [
+            "!CONFIG_H",
+            "defined(DEBUG) && defined(RELEASE)"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "unknown",
+          "content": "#error \"Cannot define both DEBUG and RELEASE\"",
+          "line_number": 49,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 50,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "ifndef",
+          "content": "#ifndef BUILD_TYPE",
+          "line_number": 52,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "!BUILD_TYPE",
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE"
+          ],
+          "symbol_name": "BUILD_TYPE"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef DEBUG",
+          "line_number": 53,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "DEBUG",
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "DEBUG"
+          ],
+          "symbol_name": "DEBUG"
+        },
+        {
+          "type": "define",
+          "content": "#define BUILD_TYPE \"Debug\"",
+          "line_number": 54,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "DEBUG"
+          ],
+          "symbol_name": "BUILD_TYPE"
+        },
+        {
+          "type": "else",
+          "content": "#else",
+          "line_number": 55,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "!DEBUG"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "define",
+          "content": "#define BUILD_TYPE \"Release\"",
+          "line_number": 56,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "!DEBUG"
+          ],
+          "symbol_name": "BUILD_TYPE"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 57,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 58,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef ENABLE_MEMORY_TRACKING",
+          "line_number": 61,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "ENABLE_MEMORY_TRACKING",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING"
+          ],
+          "symbol_name": "ENABLE_MEMORY_TRACKING"
+        },
+        {
+          "type": "define",
+          "content": "#define TRACK_ALLOCATIONS",
+          "line_number": 62,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING"
+          ],
+          "symbol_name": "TRACK_ALLOCATIONS"
+        },
+        {
+          "type": "ifdef",
+          "content": "#ifdef DETAILED_TRACKING",
+          "line_number": 63,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": "DETAILED_TRACKING",
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING",
+            "DETAILED_TRACKING"
+          ],
+          "symbol_name": "DETAILED_TRACKING"
+        },
+        {
+          "type": "define",
+          "content": "#define TRACK_CALL_STACK",
+          "line_number": 64,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING",
+            "DETAILED_TRACKING"
+          ],
+          "symbol_name": "TRACK_CALL_STACK"
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 65,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif",
+          "line_number": 66,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": null
+        },
+        {
+          "type": "endif",
+          "content": "#endif // CONFIG_H",
+          "line_number": 68,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [],
+          "symbol_name": null
+        }
+      ],
+      "defines": [
+        {
+          "type": "define",
+          "content": "#define CONFIG_H",
+          "line_number": 2,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "CONFIG_H"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_MAJOR 1",
+          "line_number": 5,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_MAJOR"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_MINOR 2",
+          "line_number": 6,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_MINOR"
+        },
+        {
+          "type": "define",
+          "content": "#define VERSION_PATCH 3",
+          "line_number": 7,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H"
+          ],
+          "symbol_name": "VERSION_PATCH"
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Windows\"",
+          "line_number": 11,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"\\\\\"",
+          "line_number": 12,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 3",
+          "line_number": 14,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 1",
+          "line_number": 16,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "WINDOWS",
+            "!DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Linux\"",
+          "line_number": 19,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"/\"",
+          "line_number": 20,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 3",
+          "line_number": 22,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 1",
+          "line_number": 24,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "defined(LINUX)",
+            "!DEBUG"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "define",
+          "content": "#define PLATFORM_NAME \"Unknown\"",
+          "line_number": 27,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "PLATFORM_NAME"
+        },
+        {
+          "type": "define",
+          "content": "#define PATH_SEPARATOR \"/\"",
+          "line_number": 28,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "PATH_SEPARATOR"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_LEVEL 0",
+          "line_number": 29,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!defined(LINUX)"
+          ],
+          "symbol_name": "LOG_LEVEL"
+        },
+        {
+          "type": "define",
+          "content": "#define USE_FILE_LOGGING",
+          "line_number": 34,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING"
+          ],
+          "symbol_name": "USE_FILE_LOGGING"
+        },
+        {
+          "type": "define",
+          "content": "#define LOG_VERBOSE",
+          "line_number": 36,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_LOGGING",
+            "VERBOSE_LOGGING"
+          ],
+          "symbol_name": "LOG_VERBOSE"
+        },
+        {
+          "type": "define",
+          "content": "#define MAX_CONNECTIONS 100",
+          "line_number": 41,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING"
+          ],
+          "symbol_name": "MAX_CONNECTIONS"
+        },
+        {
+          "type": "define",
+          "content": "#define TIMEOUT_SECONDS 30",
+          "line_number": 43,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_NETWORKING",
+            "!TIMEOUT_SECONDS"
+          ],
+          "symbol_name": "TIMEOUT_SECONDS"
+        },
+        {
+          "type": "define",
+          "content": "#define BUILD_TYPE \"Debug\"",
+          "line_number": 54,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "DEBUG"
+          ],
+          "symbol_name": "BUILD_TYPE"
+        },
+        {
+          "type": "define",
+          "content": "#define BUILD_TYPE \"Release\"",
+          "line_number": 56,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "!BUILD_TYPE",
+            "!DEBUG"
+          ],
+          "symbol_name": "BUILD_TYPE"
+        },
+        {
+          "type": "define",
+          "content": "#define TRACK_ALLOCATIONS",
+          "line_number": 62,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING"
+          ],
+          "symbol_name": "TRACK_ALLOCATIONS"
+        },
+        {
+          "type": "define",
+          "content": "#define TRACK_CALL_STACK",
+          "line_number": 64,
+          "file_path": "C:\\Users\\Username\\Desktop\\Projects\\vibe\\Qoder\\Project12\\samples\\config.h",
+          "condition": null,
+          "context": [
+            "!CONFIG_H",
+            "ENABLE_MEMORY_TRACKING",
+            "DETAILED_TRACKING"
+          ],
+          "symbol_name": "TRACK_CALL_STACK"
+        }
+      ],
+      "errors": [],
+      "line_count": 68,
+      "directive_count": 55
+    }
+  },
+  "total_files": 1,
+  "total_directives": 55,
+  "total_defines": 23,
+  "conditions_usage": {
+    "!CONFIG_H": 1,
+    "WINDOWS": 1,
+    "DEBUG": 3,
+    "defined(LINUX)": 1,
+    "ENABLE_LOGGING": 1,
+    "VERBOSE_LOGGING": 1,
+    "ENABLE_NETWORKING": 1,
+    "!TIMEOUT_SECONDS": 1,
+    "defined(DEBUG) && defined(RELEASE)": 1,
+    "!BUILD_TYPE": 1,
+    "ENABLE_MEMORY_TRACKING": 1,
+    "DETAILED_TRACKING": 1
+  },
+  "dependency_graph": {},
+  "validation_errors": []
+}

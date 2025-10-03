@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>C++ Preprocessor Analysis Report</title>
+    <style>
+
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .header { background-color: #2c3e50; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .timestamp { margin: 10px 0 0 0; opacity: 0.8; }
+        .section { background-color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .section h2 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+        .stat-box { background-color: #3498db; color: white; padding: 15px; border-radius: 5px; text-align: center; }
+        .stat-value { display: block; font-size: 24px; font-weight: bold; }
+        .stat-label { display: block; font-size: 12px; opacity: 0.8; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f8f9fa; font-weight: bold; }
+        tr:hover { background-color: #f8f9fa; }
+        code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        .filter-info { background-color: #e8f4f8; padding: 10px; border-radius: 5px; }
+        .errors { margin-top: 10px; }
+        .error-item { margin-bottom: 15px; padding: 15px; border-radius: 5px; border-left: 4px solid; }
+        .error-item.error { background-color: #fdf2f2; border-left-color: #e53e3e; }
+        .error-item.warning { background-color: #fffaf0; border-left-color: #dd6b20; }
+        .error-item.critical { background-color: #fed7d7; border-left-color: #c53030; }
+        .error-header { font-weight: bold; margin-bottom: 5px; }
+        .error-message { margin-bottom: 5px; }
+        .error-suggestion { font-style: italic; opacity: 0.8; }
+        
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <h1>C++ Preprocessor Directive Analysis Report</h1>
+        <p class='timestamp'>Generated: 2025-10-03 00:03:44</p>
+    </div>
+    <div class='section'>
+        <h2>Summary</h2>
+        <div class='summary-grid'>
+            <div class='stat-box'><span class='stat-value'>5</span><span class='stat-label'>Files</span></div>
+            <div class='stat-box'><span class='stat-value'>434</span><span class='stat-label'>Directives</span></div>
+            <div class='stat-box'><span class='stat-value'>155</span><span class='stat-label'>Defines</span></div>
+            <div class='stat-box'><span class='stat-value'>4</span><span class='stat-label'>Errors</span></div>
+        </div>
+    </div>
+    <div class='section'>
+        <h2>Files Analyzed</h2>
+        <table class='file-table'>
+            <thead>
+                <tr><th>File</th><th>Lines</th><th>Directives</th><th>Defines</th><th>Errors</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>68</td>
+                    <td>55</td>
+                    <td>23</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>123</td>
+                    <td>77</td>
+                    <td>28</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>86</td>
+                    <td>55</td>
+                    <td>21</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>192</td>
+                    <td>135</td>
+                    <td>48</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>169</td>
+                    <td>112</td>
+                    <td>35</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='section'>
+        <h2>Define Analysis</h2>
+        <table class='define-table'>
+            <thead>
+                <tr><th>Symbol</th><th>File</th><th>Line</th><th>Context</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>CONFIG_H</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>2</td>
+                    <td><code>!CONFIG_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>VERSION_MAJOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>5</td>
+                    <td><code>!CONFIG_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>VERSION_MINOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>6</td>
+                    <td><code>!CONFIG_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>VERSION_PATCH</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>7</td>
+                    <td><code>!CONFIG_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_NAME</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>11</td>
+                    <td><code>!CONFIG_H &amp;&amp; WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>PATH_SEPARATOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>12</td>
+                    <td><code>!CONFIG_H &amp;&amp; WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>14</td>
+                    <td><code>!CONFIG_H &amp;&amp; WINDOWS &amp;&amp; DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>16</td>
+                    <td><code>!CONFIG_H &amp;&amp; WINDOWS &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_NAME</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>19</td>
+                    <td><code>!CONFIG_H &amp;&amp; defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>PATH_SEPARATOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>20</td>
+                    <td><code>!CONFIG_H &amp;&amp; defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>22</td>
+                    <td><code>!CONFIG_H &amp;&amp; defined(LINUX) &amp;&amp; DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>24</td>
+                    <td><code>!CONFIG_H &amp;&amp; defined(LINUX) &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_NAME</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>27</td>
+                    <td><code>!CONFIG_H &amp;&amp; !defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>PATH_SEPARATOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>28</td>
+                    <td><code>!CONFIG_H &amp;&amp; !defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>29</td>
+                    <td><code>!CONFIG_H &amp;&amp; !defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_FILE_LOGGING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>34</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_LOGGING</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>36</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_LOGGING &amp;&amp; VERBOSE_LOGGING</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX_CONNECTIONS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>41</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>TIMEOUT_SECONDS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>43</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_NETWORKING &amp;&amp; !TIMEOUT_SECONDS</code></td>
+                </tr>
+                <tr>
+                    <td><code>BUILD_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>54</td>
+                    <td><code>!CONFIG_H &amp;&amp; !BUILD_TYPE &amp;&amp; DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>BUILD_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>56</td>
+                    <td><code>!CONFIG_H &amp;&amp; !BUILD_TYPE &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>TRACK_ALLOCATIONS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>62</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_MEMORY_TRACKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>TRACK_CALL_STACK</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\config.h</td>
+                    <td>64</td>
+                    <td><code>!CONFIG_H &amp;&amp; ENABLE_MEMORY_TRACKING &amp;&amp; DETAILED_TRACKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOGGER_H</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>2</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_BUFFER_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>9</td>
+                    <td><code>!LOGGER_H &amp;&amp; !LOG_BUFFER_SIZE</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>13</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL_WARNING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>14</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL_INFO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>15</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>16</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_LEVEL_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>17</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>CURRENT_LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>22</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &amp;&amp; DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>CURRENT_LOG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>24</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>30</td>
+                    <td><code>!LOGGER_H &amp;&amp; CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_ERROR</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>32</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_ERROR</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_WARNING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>36</td>
+                    <td><code>!LOGGER_H &amp;&amp; CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_WARNING</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_WARNING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>38</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_WARNING</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_INFO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>42</td>
+                    <td><code>!LOGGER_H &amp;&amp; CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_INFO</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_INFO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>44</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_INFO</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>48</td>
+                    <td><code>!LOGGER_H &amp;&amp; CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>50</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>54</td>
+                    <td><code>!LOGGER_H &amp;&amp; CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_VERBOSE</code></td>
+                </tr>
+                <tr>
+                    <td><code>LOG_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>56</td>
+                    <td><code>!LOGGER_H &amp;&amp; !CURRENT_LOG_LEVEL &gt;= LOG_LEVEL_VERBOSE</code></td>
+                </tr>
+                <tr>
+                    <td><code>OUTPUT_FILE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>61</td>
+                    <td><code>!LOGGER_H &amp;&amp; LOG_TO_FILE</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_CONSOLE_OUTPUT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>65</td>
+                    <td><code>!LOGGER_H &amp;&amp; LOG_TO_CONSOLE</code></td>
+                </tr>
+                <tr>
+                    <td><code>THREAD_SAFE_LOGGING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>71</td>
+                    <td><code>!LOGGER_H &amp;&amp; ENABLE_THREADING &amp;&amp; USE_MUTEX_LOGGING</code></td>
+                </tr>
+                <tr>
+                    <td><code>FAST_LOGGING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>77</td>
+                    <td><code>!LOGGER_H &amp;&amp; OPTIMIZE_LOGGING</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_LOG_BUFFER</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>79</td>
+                    <td><code>!LOGGER_H &amp;&amp; OPTIMIZE_LOGGING &amp;&amp; BUFFER_LOGS</code></td>
+                </tr>
+                <tr>
+                    <td><code>STRINGIFY</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>111</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>TOSTRING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>112</td>
+                    <td><code>!LOGGER_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>ASSERT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>115</td>
+                    <td><code>!LOGGER_H &amp;&amp; DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>ASSERT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\logger.h</td>
+                    <td>120</td>
+                    <td><code>!LOGGER_H &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>APP_NAME</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>5</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX_BUFFER_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>6</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>DBG_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>10</td>
+                    <td><code>DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>DBG_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>12</td>
+                    <td><code>!DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>INFO_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>16</td>
+                    <td><code>LOG_LEVEL &gt;= 2</code></td>
+                </tr>
+                <tr>
+                    <td><code>INFO_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>18</td>
+                    <td><code>!LOG_LEVEL &gt;= 2</code></td>
+                </tr>
+                <tr>
+                    <td><code>VERBOSE_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>22</td>
+                    <td><code>LOG_LEVEL &gt;= 3</code></td>
+                </tr>
+                <tr>
+                    <td><code>VERBOSE_PRINT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>24</td>
+                    <td><code>!LOG_LEVEL &gt;= 3</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>28</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>MIN</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>29</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>SLEEP_MS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>34</td>
+                    <td><code>WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>SLEEP_MS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>37</td>
+                    <td><code>defined(LINUX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>SECURE_NETWORKING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>43</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_PROTOCOL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>45</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; SSL_VERSION_3</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_PROTOCOL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>47</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; !SSL_VERSION_3</code></td>
+                </tr>
+                <tr>
+                    <td><code>INSECURE_NETWORKING</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>50</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !ENABLE_SSL</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_DEBUG_FLAG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>56</td>
+                    <td><code>defined(WINDOWS) &amp;&amp; defined(DEBUG)</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_DEBUG_FLAG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>58</td>
+                    <td><code>defined(LINUX) &amp;&amp; defined(DEBUG)</code></td>
+                </tr>
+                <tr>
+                    <td><code>PLATFORM_DEBUG_FLAG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>60</td>
+                    <td><code>!defined(LINUX) &amp;&amp; defined(DEBUG)</code></td>
+                </tr>
+                <tr>
+                    <td><code>BROKEN_BLOCK</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>65</td>
+                    <td><code>MISSING_ENDIF</code></td>
+                </tr>
+                <tr>
+                    <td><code>ANOTHER_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp</td>
+                    <td>70</td>
+                    <td><code>MISSING_ENDIF &amp;&amp; ANOTHER_CONDITION</code></td>
+                </tr>
+                <tr>
+                    <td><code>HTTP_PORT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>5</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>HTTPS_PORT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>6</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>FTP_PORT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>7</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_ENABLED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>15</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_TLS_1_3</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>18</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; SSL_VERSION &gt;= 3</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_TLS_1_2</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>20</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; SSL_VERSION == 2</code></td>
+                </tr>
+                <tr>
+                    <td><code>USE_TLS_1_1</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>22</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; !SSL_VERSION == 2</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_CERT_PATH</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>27</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; !SSL_CERT_PATH &amp;&amp; WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_CERT_PATH</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>29</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_SSL &amp;&amp; !SSL_CERT_PATH &amp;&amp; !WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_ENABLED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>33</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !ENABLE_SSL</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPRESSION_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>41</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_COMPRESSION &amp;&amp; USE_ZLIB</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPRESSION_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>44</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_COMPRESSION &amp;&amp; defined(USE_GZIP)</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPRESSION_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>46</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_COMPRESSION &amp;&amp; !defined(USE_GZIP)</code></td>
+                </tr>
+                <tr>
+                    <td><code>SOCKET_FAMILY</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>52</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_IPV6</code></td>
+                </tr>
+                <tr>
+                    <td><code>ADDRESS_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>53</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_IPV6</code></td>
+                </tr>
+                <tr>
+                    <td><code>SOCKET_FAMILY</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>55</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !ENABLE_IPV6</code></td>
+                </tr>
+                <tr>
+                    <td><code>ADDRESS_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>56</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !ENABLE_IPV6</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX_CONNECTIONS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>62</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !MAX_CONNECTIONS &amp;&amp; HIGH_PERFORMANCE_MODE</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX_CONNECTIONS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>64</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !MAX_CONNECTIONS &amp;&amp; !HIGH_PERFORMANCE_MODE</code></td>
+                </tr>
+                <tr>
+                    <td><code>BUFFER_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>70</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !BUFFER_SIZE &amp;&amp; LARGE_TRANSFERS</code></td>
+                </tr>
+                <tr>
+                    <td><code>BUFFER_SIZE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>72</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !BUFFER_SIZE &amp;&amp; !LARGE_TRANSFERS</code></td>
+                </tr>
+                <tr>
+                    <td><code>CONNECT_TIMEOUT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>79</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_TIMEOUTS &amp;&amp; !CONNECT_TIMEOUT</code></td>
+                </tr>
+                <tr>
+                    <td><code>READ_TIMEOUT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>83</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_TIMEOUTS &amp;&amp; !READ_TIMEOUT</code></td>
+                </tr>
+                <tr>
+                    <td><code>WRITE_TIMEOUT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>87</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; ENABLE_TIMEOUTS &amp;&amp; !WRITE_TIMEOUT</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>93</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; DEBUG_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>95</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; DEBUG_NETWORKING &amp;&amp; VERBOSE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>97</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; DEBUG_NETWORKING &amp;&amp; !VERBOSE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>100</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !DEBUG_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>101</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !DEBUG_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>HANDLE_NET_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>106</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; STRICT_ERROR_HANDLING</code></td>
+                </tr>
+                <tr>
+                    <td><code>HANDLE_NET_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>112</td>
+                    <td><code>ENABLE_NETWORKING &amp;&amp; !STRICT_ERROR_HANDLING</code></td>
+                </tr>
+                <tr>
+                    <td><code>SSL_ENABLED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>118</td>
+                    <td><code>!ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>MAX_CONNECTIONS</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>119</td>
+                    <td><code>!ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_DEBUG</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>120</td>
+                    <td><code>!ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>NET_VERBOSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>121</td>
+                    <td><code>!ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>HANDLE_NET_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>122</td>
+                    <td><code>!ENABLE_NETWORKING</code></td>
+                </tr>
+                <tr>
+                    <td><code>SOCKET_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>131</td>
+                    <td><code>WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>CLOSE_SOCKET</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>132</td>
+                    <td><code>WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>GET_LAST_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>133</td>
+                    <td><code>WINDOWS</code></td>
+                </tr>
+                <tr>
+                    <td><code>SOCKET_TYPE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>149</td>
+                    <td><code>defined(LINUX) || defined(UNIX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>CLOSE_SOCKET</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>150</td>
+                    <td><code>defined(LINUX) || defined(UNIX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>GET_LAST_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>151</td>
+                    <td><code>defined(LINUX) || defined(UNIX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>INVALID_SOCKET</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>152</td>
+                    <td><code>defined(LINUX) || defined(UNIX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>NETWORK_MODULE_VERSION_MAJOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>179</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>NETWORK_MODULE_VERSION_MINOR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>180</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>NETWORK_MODULE_VERSION_PATCH</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>181</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>ERROR_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>186</td>
+                    <td><code>ENABLE_TESTING_ERRORS &amp;&amp; UNMATCHED_CONDITION</code></td>
+                </tr>
+                <tr>
+                    <td><code>SYNTAX_ERROR</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp</td>
+                    <td>190</td>
+                    <td><code>ENABLE_TESTING_ERRORS &amp;&amp; UNMATCHED_CONDITION &amp;&amp; !ANOTHER_ERROR</code></td>
+                </tr>
+                <tr>
+                    <td><code>TEST_FILE_H</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>3</td>
+                    <td><code>!TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>SIMPLE_CONSTANT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>6</td>
+                    <td><code>!TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>STRING_CONSTANT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>7</td>
+                    <td><code>!TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>SIMPLE_CONSTANT</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>10</td>
+                    <td><code>!TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>_RESERVED_NAME</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>14</td>
+                    <td><code>!TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>FEATURE_A_ENABLED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>18</td>
+                    <td><code>!TEST_FILE_H &amp;&amp; FEATURE_A</code></td>
+                </tr>
+                <tr>
+                    <td><code>ADVANCED_FEATURES</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>20</td>
+                    <td><code>!TEST_FILE_H &amp;&amp; FEATURE_A &amp;&amp; FEATURE_A_ADVANCED</code></td>
+                </tr>
+                <tr>
+                    <td><code>FEATURE_A_ENABLED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>23</td>
+                    <td><code>!TEST_FILE_H &amp;&amp; !FEATURE_A</code></td>
+                </tr>
+                <tr>
+                    <td><code>INSIDE_UNBALANCED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>28</td>
+                    <td><code>!TEST_FILE_H &amp;&amp; UNBALANCED_START</code></td>
+                </tr>
+                <tr>
+                    <td><code>MORE_DEFINES</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>33</td>
+                    <td><code>!TEST_FILE_H &amp;&amp; UNBALANCED_START &amp;&amp; ANOTHER_UNBALANCED</code></td>
+                </tr>
+                <tr>
+                    <td><code>ORPHANED_ELSE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>41</td>
+                    <td><code>TEST_FILE_H</code></td>
+                </tr>
+                <tr>
+                    <td><code>ORPHANED_ELIF_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>44</td>
+                    <td><code>defined(ORPHANED_ELIF)</code></td>
+                </tr>
+                <tr>
+                    <td><code>LEVEL_1_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>48</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; LEVEL_1</code></td>
+                </tr>
+                <tr>
+                    <td><code>LEVEL_2_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>50</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; LEVEL_1 &amp;&amp; LEVEL_2</code></td>
+                </tr>
+                <tr>
+                    <td><code>LEVEL_3_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>52</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; LEVEL_1 &amp;&amp; LEVEL_2 &amp;&amp; LEVEL_3</code></td>
+                </tr>
+                <tr>
+                    <td><code>LEVEL_4_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>54</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; LEVEL_1 &amp;&amp; LEVEL_2 &amp;&amp; LEVEL_3 &amp;&amp; LEVEL_4</code></td>
+                </tr>
+                <tr>
+                    <td><code>UNREACHABLE_CODE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>63</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; DEBUG &amp;&amp; !DEBUG</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPLEX_CONDITION_1</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>69</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; defined(WINDOWS) &amp;&amp; defined(DEBUG) &amp;&amp; !defined(RELEASE)</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPLEX_CONDITION_2</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>71</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; defined(LINUX) || defined(UNIX)</code></td>
+                </tr>
+                <tr>
+                    <td><code>COMPLEX_CONDITION_3</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>73</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; defined(MACOS)</code></td>
+                </tr>
+                <tr>
+                    <td><code>DEFAULT_CONDITION</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>75</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; !defined(MACOS)</code></td>
+                </tr>
+                <tr>
+                    <td><code>SYNTAX_ERROR_1</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>80</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; MISSING_PARENTHESIS &amp;&amp; (CONDITION</code></td>
+                </tr>
+                <tr>
+                    <td><code>SYNTAX_ERROR_2</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>84</td>
+                    <td><code>defined(ORPHANED_ELIF) &amp;&amp; ASSIGNMENT = 1</code></td>
+                </tr>
+                <tr>
+                    <td><code>EMPTY_CONDITION</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>89</td>
+                    <td><code>defined(ORPHANED_ELIF)</code></td>
+                </tr>
+                <tr>
+                    <td><code>EMPTY_IFDEF</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>93</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>FUNCTION_MACRO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>97</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>UNSAFE_MACRO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>98</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>MULTI_LINE_MACRO</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>101</td>
+                    <td><code>global</code></td>
+                </tr>
+                <tr>
+                    <td><code>DEPENDS_ON_B</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>124</td>
+                    <td><code>CIRCULAR_A</code></td>
+                </tr>
+                <tr>
+                    <td><code>DEPENDS_ON_A</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>128</td>
+                    <td><code>CIRCULAR_B</code></td>
+                </tr>
+                <tr>
+                    <td><code>DEEPLY_NESTED_DEFINE</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>142</td>
+                    <td><code>DEEP_1 &amp;&amp; DEEP_2 &amp;&amp; DEEP_3 &amp;&amp; DEEP_4 &amp;&amp; DEEP_5 &amp;&amp; DEEP_6 &amp;&amp; DEEP_7 &amp;&amp; DEEP_8 &amp;&amp; DEEP_9 &amp;&amp; DEEP_10</code></td>
+                </tr>
+                <tr>
+                    <td><code>VALID_IN_MIXED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>156</td>
+                    <td><code>MIXED_CONTENT</code></td>
+                </tr>
+                <tr>
+                    <td><code>INVALID_IN_MIXED</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>158</td>
+                    <td><code>MIXED_CONTENT &amp;&amp; SYNTAX ERROR HERE</code></td>
+                </tr>
+                <tr>
+                    <td><code>ANOTHER_VALID</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>160</td>
+                    <td><code>MIXED_CONTENT</code></td>
+                </tr>
+                <tr>
+                    <td><code>DEBUG_LEVEL</code></td>
+                    <td>C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp</td>
+                    <td>165</td>
+                    <td><code>DEBUG_MODE</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='section'>
+        <h2>Validation Errors</h2>
+        <div class='errors'>
+            <div class='error-item error'>
+                <div class='error-header'>ERROR: C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\main.cpp:86</div>
+                <div class='error-message'>Unmatched conditional directive(s): 2 unclosed block(s)</div>
+                <div class='error-suggestion'>Suggestion: Add missing #endif directive(s)</div>
+            </div>
+            <div class='error-item error'>
+                <div class='error-header'>ERROR: C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\network.cpp:192</div>
+                <div class='error-message'>Unmatched conditional directive(s): 1 unclosed block(s)</div>
+                <div class='error-suggestion'>Suggestion: Add missing #endif directive(s)</div>
+            </div>
+            <div class='error-item error'>
+                <div class='error-header'>ERROR: C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp:94</div>
+                <div class='error-message'>Orphaned #endif directive without matching conditional</div>
+            </div>
+            <div class='error-item error'>
+                <div class='error-header'>ERROR: C:\Users\Username\Desktop\Projects\vibe\Qoder\Project12\samples\test_errors.cpp:169</div>
+                <div class='error-message'>Unmatched conditional directive(s): 1 unclosed block(s)</div>
+                <div class='error-suggestion'>Suggestion: Add missing #endif directive(s)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
